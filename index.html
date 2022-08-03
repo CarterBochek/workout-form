@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda&family=Cormorant+Garamond&display=swap" rel="stylesheet">
+  <title>Survey Form</title>
+</head>
+  
+  
+<body class="background">
+ <div id="hero-header">
+  
+
+    <header>
+      <h1 id="title">Carter's Training Survey Form</h1>
+      <p id="description">Thanks for taking a moment to improve our research.</p>
+    </header>
+  
+  <main>
+    
+    <form id="survey-form">
+      <div id="form-container">
+        
+        <label id="name-label" for="name">Name</label>
+        <input type="text" name="name" id="name" placeholder="What is your name?" required></input>
+      
+        <label id="email-label" for="email">Email</label>
+        <input type="email" name="email" id="email" placeholder="What is your Email?" required></input>
+    
+        <label id="number-label" for="number">Age - (optional)</label>
+        <input type="number" name="age" id="number" placeholder="What is your Age?" min="8" max="100"></input>
+   
+   
+   
+        <div id="dropdown-experience-box">
+          <p>How much experience do you have training/working out?</p>
+          <select id="dropdown" name="experience">
+            <option disabled selected value>Select your current training experience</option>
+            <option value="beginner">Beginner (I have been training for less than 1 year)</option>
+            <option value="intermediate">Intermediate (I have been training for atleast 1 year but no longer than 2)</option>
+            <option value="adept">Adept (I have been training for atleast 2 years, but no longer than 3)</option>
+            <option value="elite">Elite (I have been training for more than 3 years)</option>
+          </select>
+        </div>
+   
+        <div id="radio-button-box">
+          
+          <p id="select-title">What is your favorite way to train?</p>  
+          
+          <label id="radio-label-weight">
+            <input name="user-choice" value="lifting-weights" type="radio" class="input-radio" checked>
+            Lifting Weights
+          </label>
+          
+          <label id="radio-label-bodyweight">
+            <input name="user-choice" value="bodyweight-training" type="radio" class="input-radio">
+            Bodyweight Training
+          </label>
+          
+          <label id="radio-label-train-both">
+            <input name="user-choice" value="lifting-weights-bodyweight-training" type="radio" class="input-radio">
+            Lifting Weights and Bodyweight Training
+          </label>
+        </div>
+   
+   <p>What goals do you have?<span class="checkbox-hint">(Check all boxes that are relevant.)</span></p>
+   
+   <label><input name="liked" value="bodybuilding" type="checkbox" class="input-checkbox">Bodybuilding</label>
+   
+   <label><input name="liked" value="powerlifting" type="checkbox" class="input-checkbox">Powerlifting</label>
+   
+   <label><input name="liked" value="cross-fit" type="checkbox" class="input-checkbox">Cross-fit</label>
+   
+   <label><input name="liked" value="marathon-runner" type="checkbox" class="input-checkbox">Marathon Runner</label>
+   
+   <label><input name="liked" value="just-for-fun" type="checkbox" class="input-checkbox">Just for Fun</label>
+   
+     
+  <label><input name="liked" value="strongman" type="checkbox" class="input-checkbox">Strongman</label>
+   
+   <p class="comment-heading">Any comments or concerns?</p>
+   
+   <textarea id="comments" class="input-textarea" placeholder="Enter your comment here..."></textarea>
+   
+   <div id="submit-box">
+   <button type="submit" id="submit" class="submit-button">Submit</button>
+   </div>
+   
+   
+   </div>
+   </form>
+   
+    
+    
+    
+  </main>
+  
+  
+  
+  
+  </div>
+</body>
+</html>
